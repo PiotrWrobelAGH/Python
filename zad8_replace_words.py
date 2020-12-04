@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 
-f = open("file.txt", "r+", encoding='utf-8')
+f = open("zad8_replace_words.txt", "r+", encoding='utf-8')
 text = f.read()
-my_dict = {"i":"oraz","oraz":"i","nigdy":"prawie nigdy","dlaczego":"czemu"}
+my_dict = {"discovery":"super","after":"before","hold":"release","extremely":"not"}
 #Brak informacji na temat czy "i" i "oraz" mają być zamieniane w "locie" czy też nie
 
 for i, j in my_dict.items():
@@ -24,6 +24,6 @@ for i, j in my_dict.items():
         
 print(text)
 f.close()
-f = open("file.txt", "w+", encoding='utf-8')
+f = open("zad8_replace_words", "w+", encoding='utf-8')
 f.write(text)
 f.close()

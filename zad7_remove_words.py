@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 
-f = open("file.txt", "r+", encoding='utf-8')
+f = open("zad7_remove_words.txt", "r+", encoding='utf-8')
 text = f.read()
-my_list = ["się", "i","oraz","nigdy","dlaczego"]
+my_list = ["and", "Max","oraz","was","Trojans"]
 
 for i in range(0,len(my_list)):
     s = 0
@@ -23,6 +23,6 @@ for i in range(0,len(my_list)):
         
 print(text)
 f.close()
-f = open("file.txt", "w+", encoding='utf-8')
+f = open("zad7_remove_words.txt", "w+", encoding='utf-8')
 f.write(text)
 f.close()
