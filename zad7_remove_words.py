@@ -3,7 +3,7 @@
 
 f = open("zad7_remove_words.txt", "r+", encoding='utf-8')
 text = f.read()
-my_list = ["and", "Max","oraz","was","Trojans"]
+my_list = ["and","Max","large","was","Trojans"]
 
 for i in range(0,len(my_list)):
     s = 0
