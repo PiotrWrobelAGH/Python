@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-code = '12345'
-input_code = input('Password\n')
-if(code == input_code):
+input_code = input('Set password\n')
+input_code2 = input('Tell the password\n')
+
+if(input_code2 != input_code):
     print('Wrong')
 else:
     print('Accept')
